@@ -1,4 +1,4 @@
-CREATE DATABASE perntodo;
+-- CREATE DATABASE perntodo;
 
 --Child
 CREATE TABLE todo(
@@ -19,8 +19,3 @@ CREATE TABLE lists(
     list_name VARCHAR(255),
     created_at TIMESTAMP DEFAULT Now()
 );
-
-
-ALTER TABLE todo ADD COLUMN "completed" BOOLEAN DEFAULT FALSE;
-ALTER TABLE todo ADD COLUMN "created_at" TIMESTAMP DEFAULT Now();
-DROP TABLE todo;
