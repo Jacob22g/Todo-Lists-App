@@ -2,6 +2,13 @@ const express = require('express')
 const router = new express.Router()
 const pool = require('../db')
 
+//
+// in real life app I would have add: 
+// add validation: check all requset parameters
+// seperate the query's to diffeent files
+// DELETE commands will be a column named is_deleted instead of delete is a real application
+//
+
 //create a todo
 router.post('/todos', async (req, res) => {
     try {
@@ -38,7 +45,7 @@ router.get('/todos/:id', async (req, res) => {
     try {
 
         const { id } = req.params
-        // VALIDATION: check if id is an integer
+        
         const todo = await pool.query('SELECT * FROM todo WHERE todo_id=$1', [id])
 
         res.json(todo.rows[0])
@@ -47,8 +54,6 @@ router.get('/todos/:id', async (req, res) => {
         console.error(err)
     }
 })
-
-//TODO: change id to list_id
 
 //gat all todos of a list
 router.get('/lists/todos/:id', async (req, res) => {
@@ -69,7 +74,6 @@ router.put('/todos/:id', async (req, res) => {
         const { description, completed } = req.body
 
         const update = await pool.query("UPDATE todo SET description = $1, completed=$2 WHERE todo_id=$3", [description, completed, id])
-        // const updatedTodo = await pool.query('SELECT * FROM todo WHERE todo_id=$1', [id])
         
         res.json('updated')
 

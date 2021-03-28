@@ -3,11 +3,11 @@ const router = new express.Router()
 const pool = require('../db')
 
 //
-// seperate the query 
-// 
+// in real life app I would have add: 
+// add validation: check all requset parameters
+// seperate the query's to diffeent files
 // DELETE commands will be a column named is_deleted instead of delete is a real application
 //
-
 
 router.post('/lists', async (req,res) => {
     try {
