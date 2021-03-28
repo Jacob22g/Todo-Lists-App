@@ -209,7 +209,6 @@ const delTo = (data, getState) => {
 }
 
 
-
 //Modal
 export const openModal = (modalType) => {
     return {

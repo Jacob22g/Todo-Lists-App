@@ -27,20 +27,20 @@ router.post('/todos', async (req, res) => {
     }
 })
 
-//get all todos
-router.get('/todos', async (req, res) => {
-    try {
+// get all todos - Only here for tests
+// router.get('/todos', async (req, res) => {
+//     try {
 
-        const allTodos = await pool.query('SELECT * FROM todo ORDER BY created_at asc')
+//         const allTodos = await pool.query('SELECT * FROM todo ORDER BY created_at asc')
 
-        res.json(allTodos.rows)
+//         res.json(allTodos.rows)
 
-    } catch (err) {
-        console.error(err)
-    }
-})
+//     } catch (err) {
+//         console.error(err)
+//     }
+// })
 
-//gat a todo
+// gat a todo by id
 router.get('/todos/:id', async (req, res) => {
     try {
 
@@ -58,9 +58,13 @@ router.get('/todos/:id', async (req, res) => {
 //gat all todos of a list
 router.get('/lists/todos/:id', async (req, res) => {
     try {
+
         const { id } = req.params
+
         const todos = await pool.query('SELECT * FROM todo WHERE list_id=$1 ORDER BY created_at asc', [id])
+
         res.json(todos.rows)
+        
     } catch (err) {
         console.error(err)
     }

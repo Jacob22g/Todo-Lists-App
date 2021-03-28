@@ -78,7 +78,6 @@ const mapDispatchToProps = dispatch => {
         onDeleteTodo: (todo_id) => dispatch(actionCreators.deleteTodo(todo_id)),
         onSelectEditTodo: (todo) => dispatch(actionCreators.onSelectEditTodo(todo)),
         onCbChangedTodo: (todo) => dispatch(actionCreators.cbChangedTodo(todo)),
-        // onDeleteList: (list) => dispatch(actionCreators.deleteList(list)),
         onOpenModal: () => dispatch(actionCreators.openModal('EDIT_TODO_MODAL')),
         onOpenDeleteListModal: () => dispatch(actionCreators.openModal('DELETE_LIST_MODAL')),
     }

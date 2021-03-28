@@ -15,20 +15,20 @@ class InputTodo extends Component {
         let inputForm = null
         if (this.props.selctedList.list_name !== '') {
             inputForm = (
-            <form onSubmit={(e) => {
-                e.preventDefault();
-                this.props.onAddTodo(this.state.newTodoDescription, this.props.selctedList.list_id)
-                this.setState({ newTodoDescription: ''})
-            }}>
-                <input className={classes.Input}
-                    type="text" 
-                    required
-                    maxLength="55" 
-                    value={this.state.newTodoDescription} 
-                    placeholder='New Todo Description' 
-                    onChange={e => this.setState({newTodoDescription :e.target.value})}/>
-                <button className={classes.Button}>Add</button>
-            </form>
+                <form onSubmit={(e) => {
+                    e.preventDefault();
+                    this.props.onAddTodo(this.state.newTodoDescription, this.props.selctedList.list_id)
+                    this.setState({ newTodoDescription: ''})
+                }}>
+                    <input className={classes.Input}
+                        type="text" 
+                        required
+                        maxLength="55" 
+                        value={this.state.newTodoDescription} 
+                        placeholder='New Todo Description' 
+                        onChange={e => this.setState({newTodoDescription :e.target.value})}/>
+                    <button className={classes.Button}>Add</button>
+                </form>
             )
         }
 

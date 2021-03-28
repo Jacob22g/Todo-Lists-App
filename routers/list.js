@@ -9,6 +9,7 @@ const pool = require('../db')
 // DELETE commands will be a column named is_deleted instead of delete is a real application
 //
 
+// Create a list
 router.post('/lists', async (req,res) => {
     try {
         const { list_name } = req.body
@@ -22,6 +23,7 @@ router.post('/lists', async (req,res) => {
     }
 })
 
+// Get all lists
 router.get('/lists', async (req,res) => {
     try {
         const allLists = await pool.query('SELECT * FROM lists ORDER BY created_at asc')
@@ -31,6 +33,7 @@ router.get('/lists', async (req,res) => {
     }
 })
 
+// Delete a list
 router.delete('/lists/:id', async (req,res) => {
     try {
         const { id } = req.params
