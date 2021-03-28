@@ -22,9 +22,9 @@ if(process.env.NODE_ENV === "production"){
 app.use(listRouter)
 app.use(taskRouter)
 
-// app.get('*', (req, res) => {
-//     res.sendFile(path.join(__dirname, 'client/build/index.html'))
-// })
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'client/build/index.html'))
+})
 
 app.listen(port, () => {
     console.log('server is runing on port '+port)
