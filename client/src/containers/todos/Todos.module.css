@@ -1,0 +1,39 @@
+.Todo {
+    height: 100%;
+    width: 75%;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 40px; /* Place content 60px from the top */
+    text-align: center;
+    background-color:rgb(243, 230, 205);
+}
+
+.ListName {
+    font-family: 'Raleway',sans-serif; 
+    font-size: 52px; 
+    font-weight: 800; 
+    line-height: 72px; 
+    margin: 0 0 24px; 
+    text-align: center; 
+    text-transform: uppercase;
+}
+
+.List {
+    text-align: center;
+    background-color: wheat;
+}
+
+.Input {
+    text-align: center;
+}
+
+.Table {
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+    background-color: wheat;
+    padding: 0 100px;
+}

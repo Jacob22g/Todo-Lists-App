@@ -1,0 +1,27 @@
+.Input {
+    width: 70%;
+    padding: 12px 20px;
+    margin-right: 8px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: medium;
+}
+
+.Button {
+    background-color: #376cad;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 12px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor:pointer;
+}
+
+.Button:hover {
+    background-color: #8296ad;
+}

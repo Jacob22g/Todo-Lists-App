@@ -1,0 +1,49 @@
+.Input {
+    width: 70%;
+    padding: 10px 20px;
+    margin-right: 8px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: medium;
+}
+
+.AddButton {
+    background-color: #376cad;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor:pointer;
+}
+
+.AddButton:hover {
+    background-color: #8296ad;
+}
+
+.CancelButton {
+    background-color: #adb491;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor:pointer;
+    margin-top: 10px;
+}
+.CancelButton:hover {
+    background-color: #bcc2a6;
+}
+
+.Title {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 22px;
+}

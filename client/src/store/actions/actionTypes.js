@@ -1,0 +1,13 @@
+export const GET_LISTS = 'GET_LISTS'
+export const ADD_LIST = 'ADD_LIST'
+export const DELETE_LIST = 'DELETE_LIST'
+export const GET_TODOS = 'GET_TODOS'
+export const ADD_TODO = 'ADD_TODO'
+export const CB_TODO = 'CB_TODO'
+export const SELECT_EDIT_TODO = 'SELECT_EDIT_TODO'
+export const EDIT_TODO = 'EDIT_TODO'
+export const DELETE_TODO = 'DELETE_TODO'
+export const NEW_LIST_MODAL = 'NEW_LIST_MODAL'
+export const DELETE_LIST_MODAL = 'DELETE_LIST_MODAL'
+export const EDIT_TODO_MODAL = 'EDIT_TODO_MODAL'
+

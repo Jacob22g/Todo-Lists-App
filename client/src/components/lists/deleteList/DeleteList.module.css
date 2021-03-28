@@ -1,0 +1,42 @@
+.DelButton {
+    background-color: #ad6237;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 30px;
+    cursor:pointer;
+}
+.DelButton:hover {
+    background-color: #ac795c;
+}
+
+.CancelButton {
+    background-color: #adb491;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor:pointer;
+}
+.CancelButton:hover {
+    background-color: #bcc2a6;
+}
+
+
+
+.Title {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 22px;
+}
+
+.Text {
+    padding-bottom: 8px;
+}
