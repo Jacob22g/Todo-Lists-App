@@ -17,10 +17,11 @@ const proConfig = {
 
 const pool = new Pool({
     connectionString: process.env.NODE_ENV === "production" ? proConfig : devConfig,
-    ssl: {
-        rejectUnauthorized: false
-    },
-    sslmode: process.env.NODE_ENV === "production" ? "require" : "disable"
+    // ssl: {
+    //     rejectUnauthorized: false
+    // },
+    sslmode= 'require'
+    // sslmode: process.env.NODE_ENV === "production" ? "require" : "disable"
 });
 
 module.exports = pool

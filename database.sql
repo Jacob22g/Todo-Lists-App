@@ -1,5 +1,12 @@
 -- CREATE DATABASE perntodo;
 
+--Parent
+CREATE TABLE lists(
+    list_id SERIAL PRIMARY KEY,
+    list_name VARCHAR(255),
+    created_at TIMESTAMP DEFAULT Now()
+);
+
 --Child
 CREATE TABLE todo(
     todo_id SERIAL PRIMARY KEY,
@@ -11,11 +18,4 @@ CREATE TABLE todo(
         FOREIGN KEY(list_id) 
             REFERENCES lists(list_id)
             ON DELETE CASCADE
-);
-
---Parent
-CREATE TABLE lists(
-    list_id SERIAL PRIMARY KEY,
-    list_name VARCHAR(255),
-    created_at TIMESTAMP DEFAULT Now()
 );
