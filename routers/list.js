@@ -16,7 +16,7 @@ router.post('/lists', async (req,res) => {
             'INSERT INTO lists (list_name) VALUES($1) RETURNING *',
              [list_name]
         )
-        res.json(newList.rows)
+        res.status(201).json(newList.rows)
     } catch (err) {
         console.error(err)
     }

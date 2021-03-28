@@ -13,7 +13,7 @@ router.post('/todos', async (req, res) => {
              [description, list_id]
         )
 
-        res.json(newTodo.rows)
+        res.status(201).json(newTodo.rows)
 
     } catch (err) {
         console.error(err)
